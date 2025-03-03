@@ -71,6 +71,20 @@ SupportAgentChatbot/
    ```
 3. Open `index.html` in a browser to interact with the chatbot.
 
+## Running the Scraper & Data Extraction
+1. Run the scraper to extract documentation data:
+   ```sh
+   python scraper.py
+   ```
+2. Ensure extracted data is saved in the `data/` folder.
+
+## Running the Query Processor
+1. Process a sample query:
+   ```sh
+   python query_processor.py --query "How do I set up a new source in Segment?"
+   ```
+2. Check if the response is relevant.
+
 ## Testing
 - Try different 'how-to' queries.
 - Ask cross-CDP comparison questions.
