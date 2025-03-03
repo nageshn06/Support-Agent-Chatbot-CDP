@@ -28,16 +28,16 @@ A chatbot that can answer "how-to" questions related to four Customer Data Platf
 
 ## Improvements & Fixes:
 ### **New Enhancements:**
-**Better Query Processing** – Improved NLP to fetch more accurate responses.
-**Response Ranking** – Prioritizes the most relevant answer when multiple matches are found.
-**Handle Edge Cases** – Enhanced response handling for long and irrelevant queries.
-**Improved UI/UX** – Added loading indicators and refined chatbot response formatting.
-**Logging & Debugging** – Added logs to track queries and errors for performance analysis.
+1. **Better Query Processing** – Improved NLP to fetch more accurate responses.
+2. **Response Ranking** – Prioritizes the most relevant answer when multiple matches are found.
+3. **Handle Edge Cases** – Enhanced response handling for long and irrelevant queries.
+4. **Improved UI/UX** – Added loading indicators and refined chatbot response formatting.
+5. **Logging & Debugging** – Added logs to track queries and errors for performance analysis.
 
 ### **Fixes:**
-**Query Variations Handling** – Ensured consistent answers for similar questions.
-**Cross-CDP Comparisons** – Enhanced responses with clearer comparisons.
-**Optimized Scraper & Query Processor** – Reduced response time by implementing caching for frequent queries.
+1. **Query Variations Handling** – Ensured consistent answers for similar questions.
+2. **Cross-CDP Comparisons** – Enhanced responses with clearer comparisons.
+3. **Optimized Scraper & Query Processor** – Reduced response time by implementing caching for frequent queries.
 
 
 ## Project Structure:
