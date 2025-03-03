@@ -4,10 +4,45 @@
 
 A chatbot that can answer "how-to" questions related to four Customer Data Platforms (CDPs): Segment, mParticle, Lytics, and Zeotap. The chatbot should be ableto extract relevant information from the official documentation of these CDPs to guideusers on how to perform tasks or achieve specific outcomes within each platform.
 
+## Features
+### Core Functionalities:
+1. **Answer 'How-to' Questions:**
+   - Understands user queries related to Segment, mParticle, Lytics, and Zeotap.
+   - Extracts information from official documentation to provide step-by-step guidance.
 
-## Project Folder Structure
+2. **Extract Information from Documentation:**
+   - Navigates through documentation to retrieve relevant sections.
+   - Uses scraping and indexing techniques to improve search efficiency.
+
+3. **Handle Variations in Questions:**
+   - Ensures long queries do not break processing.
+   - Filters out irrelevant questions (e.g., asking about movies).
+
+### Bonus Features:
+4. **Cross-CDP Comparisons:**
+   - Answers questions comparing functionalities of different CDPs.
+   - Example: "How does Segment's audience creation process compare to Lytics'?"
+
+5. **Advanced 'How-to' Questions:**
+   - Supports complex queries related to advanced configurations and integrations.
+
+## Improvements & Fixes:
+### **New Enhancements:**
+✅ **Better Query Processing** – Improved NLP to fetch more accurate responses.
+✅ **Response Ranking** – Prioritizes the most relevant answer when multiple matches are found.
+✅ **Handle Edge Cases** – Enhanced response handling for long and irrelevant queries.
+✅ **Improved UI/UX** – Added loading indicators and refined chatbot response formatting.
+✅ **Logging & Debugging** – Added logs to track queries and errors for performance analysis.
+
+### **Fixes:**
+🔹 **Query Variations Handling** – Ensured consistent answers for similar questions.
+🔹 **Cross-CDP Comparisons** – Enhanced responses with clearer comparisons.
+🔹 **Optimized Scraper & Query Processor** – Reduced response time by implementing caching for frequent queries.
+
+
+## Project Structure:
 ```
-Support-Agent-Chatbot/
+SupportAgentChatbot/
 │── data/
 │   │── segment_docs.json
 │   │── mparticle_docs.json
@@ -15,16 +50,33 @@ Support-Agent-Chatbot/
 │   │── zeotap_docs.json
 │── models/
 │   │── retrieval_model.py
-│── backend/
-│   │── app.py
-│   │── query_processor.py
-│   │── scraper.py
-│── frontend/
-│   │── index.html
-│   │── script.js
-│   │── styles.css
-│── README.md
+│── app.py (Main chatbot application)
+│── scraper.py (Extracts data from CDP documentation)
+│── query_processor.py (Processes user queries)
+│── ui/
+│   │── index.html (Chatbot UI)
+│   │── style.css (Chatbot Styling)
+│   │── script.js (Frontend logic)
+│── README.md (This file)
 ```
+
+## Running the Chatbot
+1. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+2. Run the chatbot backend:
+   ```sh
+   python app.py
+   ```
+3. Open `index.html` in a browser to interact with the chatbot.
+
+## Testing
+- Try different 'how-to' queries.
+- Ask cross-CDP comparison questions.
+- Test handling of irrelevant queries.
+  
+This chatbot is designed to provide fast and accurate responses, improving user experience with CDPs.
 
 ## Features Implemented
 1. **Answer 'How-to' Questions** – Provides guidance for Segment, mParticle, Lytics, and Zeotap.
@@ -121,7 +173,7 @@ python app.py
 #### 5. Long Query Test
 ✅ "I need to set up a new source in Segment and also ensure that data flows correctly into mParticle and Zeotap while maintaining user privacy. How should I do this?"
 
----
+
 ## Contributors
 
 - [Nagesh N]
