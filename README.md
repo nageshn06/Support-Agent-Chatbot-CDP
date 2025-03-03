@@ -122,3 +122,9 @@ python app.py
 ✅ "I need to set up a new source in Segment and also ensure that data flows correctly into mParticle and Zeotap while maintaining user privacy. How should I do this?"
 
 ---
+## Contributors
+
+- [Nagesh N]
+
+##
+---
